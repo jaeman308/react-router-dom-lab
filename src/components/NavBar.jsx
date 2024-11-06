@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom-lab';
 
 const NavBar = () => {
     return (
@@ -11,3 +11,5 @@ const NavBar = () => {
         </nav>
     )
 }
+
+export default NavBar;
