@@ -1,6 +1,6 @@
 const MailboxForm = () => {
     return (
-        <h1>mailbox form</h1>
+        <h1>New Mailbox</h1>
     )
 }
 

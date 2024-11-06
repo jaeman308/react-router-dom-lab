@@ -1,6 +1,6 @@
 const MailboxList = () => {
     return (
-        <h1>mailboxlist</h1>
+        <h1>Mailbox List</h1>
     )
 }
 
