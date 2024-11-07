@@ -7,6 +7,7 @@ import MailboxDetails from './components/MailboxDetails'
 import './App.css'
 
 const App = () => {
+  const [mailboxes, setmailboxes] = useState ([]);
 
   return (
     <>
