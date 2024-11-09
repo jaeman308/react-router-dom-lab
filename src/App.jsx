@@ -13,9 +13,10 @@ const App = () => {
     <>
     <NavBar />
      <Routes>
-     <Route path="/" element= {<h2>Home Page</h2>} />
+     <Route path="/" element= {<h1>POST OFFICE</h1>} />
      <Route path="/mailboxes" element={<MailboxList />} />
      <Route path="/new-mailbox" element={<MailboxForm />} />
+     <Route path="/mailboxes/:mailboxId" element={<MailboxDetails />} />
     </Routes>
 
     </> 
