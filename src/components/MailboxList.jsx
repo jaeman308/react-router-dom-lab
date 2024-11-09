@@ -1,7 +1,10 @@
-const MailboxList = () => {
-    return (
-        <h1>Mailbox List</h1>
-    )
+
+import { Link } from 'react-router-dom'
+
+
+
+const MailboxList = ({ mailboxes }) => {
+    
 }
 
 export default MailboxList;
