@@ -14,9 +14,9 @@ const App = () => {
     <NavBar />
      <Routes>
      <Route path="/" element= {<h1>POST OFFICE</h1>} />
-     <Route path="/mailboxes" element={<MailboxList />} />
+     <Route path="/mailboxes" element={<MailboxList mailboxes={mailboxes} />} />
      <Route path="/new-mailbox" element={<MailboxForm />} />
-     <Route path="/mailboxes/:mailboxId" element={<MailboxDetails />} />
+     <Route path="/mailboxes/:mailboxId" element={<MailboxDetails mailboxes={mailboxes} />} />
     </Routes>
 
     </> 

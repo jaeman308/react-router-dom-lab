@@ -19,7 +19,7 @@ const MailboxForm = () => {
         event.preventDefault();
         const newMailboxWithId = {
             ...newMailbox,
-            _id: mailbox.length +1, };
+            _id: mailbox.length + 1, };
         setMailbox([...mailbox, newMailboxWithId])
         setNewMailbox({boxholder:'', size:'', _id: null});
         navigate("/Mailboxes");
