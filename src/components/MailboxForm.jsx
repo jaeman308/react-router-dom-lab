@@ -49,8 +49,8 @@ const MailboxForm = () => {
             <option value="medium">medium</option>
             <option value="large">large</option>
             </select>
-        </form>
         <button type="submit">Submit</button>
+        </form>
         </>
     )
 }
