@@ -15,7 +15,7 @@ const App = () => {
      <Routes>
      <Route path="/" element= {<h1>POST OFFICE</h1>} />
      <Route path="/mailboxes" element={<MailboxList mailboxes={mailboxes} />} />
-     <Route path="/new-mailbox" element={<MailboxForm />} />
+     <Route path="/new-mailbox" element={<MailboxForm mailboxes={mailboxes} setMailboxes={setmailboxes}/>} />
      <Route path="/mailboxes/:mailboxId" element={<MailboxDetails mailboxes={mailboxes} />} />
     </Routes>
 

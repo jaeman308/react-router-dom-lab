@@ -1,10 +1,8 @@
 import {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 
-const MailboxForm = () => {
- const [mailbox, setMailbox]= useState ([]);
-
- const [newMailbox, setNewMailbox] = useState ({
+const MailboxForm = ({mailboxes, setMailboxes}) => {
+    const [newMailbox, setNewMailbox] = useState ({
         boxholder: '',
         size: '',
         _id: null,
@@ -19,10 +17,10 @@ const MailboxForm = () => {
         event.preventDefault();
         const newMailboxWithId = {
             ...newMailbox,
-            _id: mailbox.length + 1, };
-        setMailbox([...mailbox, newMailboxWithId])
+            _id: mailboxes.length + 1, };
+        setMailboxes([...mailboxes, newMailboxWithId])
         setNewMailbox({boxholder:'', size:'', _id: null});
-        navigate("/Mailboxes");
+        navigate("/mailboxes");
     }
 
     return (

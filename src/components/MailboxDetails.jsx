@@ -11,7 +11,7 @@ const MailboxDetails = ({ mailboxes }) => {
                 <div>
                     <h2>Mailbox {selectedMailbox._id}</h2>
                     <p>Boxholder: {selectedMailbox.boxholder}</p>
-                    <p>Box Size: {selectedMailbox.boxSize}</p>
+                    <p>Box Size: {selectedMailbox.size}</p>
                 </div>
             ) : (
                 <p>Mailbox Not Found!</p>
